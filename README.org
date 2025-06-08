@@ -1,0 +1,30 @@
+#+TITLE: The Illusion of Thinking
+#+AUTHOR: 
+#+DATE: 
+
+* The Illusion of Thinking
+
+This repository contains utilities for downloading and working with "The Illusion of Thinking: Engagement in Thought and Reasoning Is Not Evidence of Computation in the Brain" research paper from Apple.
+
+** Getting Started
+
+To download the paper, run:
+
+#+begin_src shell
+make download
+#+end_src
+
+This will download the PDF file if it doesn't already exist locally.
+
+** References
+
+- [[https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf][Research paper on Apple ML Research site]]
+- [[https://news.ycombinator.com/item?id=44203562][Hacker News discussion]]
+
+** Cleanup
+
+To remove the downloaded paper:
+
+#+begin_src shell
+make clean
+#+end_src

@@ -1,4 +1,4 @@
-.PHONY: download clean diagrams help
+.PHONY: download clean diagrams run help
 
 PAPER_URL = https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf
 PAPER_FILE = the-illusion-of-thinking.pdf
@@ -6,6 +6,7 @@ PAPER_FILE = the-illusion-of-thinking.pdf
 help:
 	@echo "Available targets:"
 	@echo "  download  - Download the research paper if not present locally"
+	@echo "  run       - Run the puzzle simulator examples"
 	@echo "  diagrams  - Convert Mermaid diagram files (.mmd) to PNG images"
 	@echo "  clean     - Remove the downloaded paper and generated diagrams"
 	@echo "  help      - Display this help message"
@@ -26,6 +27,10 @@ download:
 
 diagrams: $(patsubst %.mmd,%.png,$(wildcard diagrams/*.mmd))
 	@echo "All diagrams converted to PNG."
+
+run:
+	@echo "Running puzzle simulators..."
+	@python3 src/puzzle_simulator.py
 
 clean:
 	@echo "Removing downloaded paper and generated diagrams..."

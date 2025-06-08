@@ -1,8 +1,6 @@
 #+TITLE: The Illusion of Thinking
-#+AUTHOR: 
-#+DATE: 
-
-* The Illusion of Thinking
+#+AUTHOR: Aidan Pace
+#+DATE: 2025-06-08
 
 This repository contains utilities for downloading and working with "The Illusion of Thinking: Engagement in Thought and Reasoning Is Not Evidence of Computation in the Brain" research paper from Apple.
 
@@ -15,6 +13,12 @@ make download
 #+end_src
 
 This will download the PDF file if it doesn't already exist locally.
+
+To run the puzzle simulators and see the LRM performance demonstrations:
+
+#+begin_src shell
+make run
+#+end_src
 
 ** References
 

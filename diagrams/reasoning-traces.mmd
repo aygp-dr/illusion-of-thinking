@@ -1,0 +1,30 @@
+flowchart TB
+    subgraph "Low Complexity"
+        A1[Start] --> A2[Find Solution Early]
+        A2 --> A3[Continue Exploring]
+        A3 --> A4[Waste Tokens]
+        A4 --> A5[Return to Solution]
+        style A2 fill:#90EE90
+        style A3 fill:#FFB6C1
+        style A4 fill:#FFB6C1
+    end
+    
+    subgraph "Medium Complexity"
+        B1[Start] --> B2[Explore Wrong Paths]
+        B2 --> B3[Search Continues]
+        B3 --> B4[Find Solution Late]
+        B4 --> B5[Success]
+        style B2 fill:#FFB6C1
+        style B3 fill:#FFE66D
+        style B4 fill:#90EE90
+    end
+    
+    subgraph "High Complexity"
+        C1[Start] --> C2[All Wrong Paths]
+        C2 --> C3[Token Reduction]
+        C3 --> C4[Give Up]
+        C4 --> C5[Failure]
+        style C2 fill:#FF6B6B
+        style C3 fill:#FF6B6B
+        style C4 fill:#FF6B6B
+    end

@@ -1,0 +1,18 @@
+graph TD
+    A[Problem Complexity] --> B{Complexity Level}
+    B -->|Low: 1-3| C[Low Complexity Regime]
+    B -->|Medium: 4-8| D[Medium Complexity Regime]
+    B -->|High: 9+| E[High Complexity Regime]
+    
+    C --> F[Standard LLM Better]
+    C --> G[LRM Overthinks]
+    
+    D --> H[LRM Excels]
+    D --> I[Thinking Helps]
+    
+    E --> J[Both Collapse]
+    E --> K[Token Reduction]
+    
+    style C fill:#90EE90
+    style D fill:#87CEEB
+    style E fill:#FFB6C1

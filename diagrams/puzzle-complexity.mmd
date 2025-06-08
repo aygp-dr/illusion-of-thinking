@@ -1,0 +1,19 @@
+graph TD
+    A[Puzzle Types] --> B[Tower of Hanoi]
+    A --> C[Checker Jumping]
+    A --> D[River Crossing]
+    A --> E[Blocks World]
+    
+    B --> F[2^N - 1 moves]
+    C --> G[(N+1)² - 1 moves]
+    D --> H[~2N·3 moves]
+    E --> I[~2N moves]
+    
+    F --> J[Exponential]
+    G --> K[Quadratic]
+    H --> L[Linear]
+    I --> L
+    
+    style J fill:#FF6B6B
+    style K fill:#FFE66D
+    style L fill:#4ECDC4

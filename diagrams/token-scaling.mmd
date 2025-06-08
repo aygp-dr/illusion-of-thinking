@@ -1,0 +1,14 @@
+graph LR
+    subgraph "Thinking Token Usage"
+        A[Low Complexity] -->|Increases| B[Peak Effort]
+        B -->|Counterintuitive| C[Decline]
+        C -->|Collapse| D[Minimal Effort]
+    end
+    
+    A -.->|1-5| E[Tokens ∝ N²]
+    B -.->|6-8| F[Max Tokens]
+    C -.->|9-12| G[Decreasing]
+    D -.->|13+| H[~500 tokens]
+    
+    style B fill:#FFD700
+    style C fill:#FF6347
